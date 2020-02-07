@@ -3,8 +3,12 @@ import TodoListItem from './todo-lest-item'
 
 const TodoList = ({todos}) => {
     const elements = todos.map((item) => {
+
+        const { id, ...itemProps } = item;
+
         return (
-            <li><TodoListItem label={item.label} important={item.important} /></li>
+            <li key={id}><TodoListItem {...itemProps} /></li>
+            // <li><TodoListItem label={item.label} important={item.important} /></li>
         );
     });
     return (
