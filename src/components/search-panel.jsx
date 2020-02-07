@@ -7,7 +7,7 @@ const SearchPanel = () => {
     }
     return (
         <input type="text" style={searchStyle} placeholder={searchText} className='searchInput'
-        //disabled equal disabled={true}
+            //disabled equal disabled={true}
             htmlFor='todo' />
     )
 };
