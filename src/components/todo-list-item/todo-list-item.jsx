@@ -28,8 +28,8 @@ export default class TodoListItem extends Component {
     this.setState(({ done }) => {
       return {
         done: !done
-      }
-    })
+      };
+    });
     // console.log(this.state.done)
   };
   // onLabelClick = () => {
@@ -72,9 +72,9 @@ export default class TodoListItem extends Component {
         </button>
       </div>
     );
-  }
+  };
 
-}
+};
 
 
 
