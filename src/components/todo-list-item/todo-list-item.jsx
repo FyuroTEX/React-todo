@@ -10,11 +10,14 @@ export default class TodoListItem extends Component {
     // this.onLabelClick = () => {
     //   console.log(`Done: ${this.props.label}`);
     // };
-    this.onLabelClick = this.onLabelClick.bind(this);
+    this.onLabelClick = this.onLabelClick.bind(this); //Delete if use first variant
   };
   onLabelClick() {
     console.log(`Done: ${this.props.label}`); //Delete if use first variant
-  }
+  };
+  // onLabelClick = () => {
+  //   console.log(`Done: ${this.props.label}`); //Use arrow function withouts constructirs and bindings
+  // };
 
   render() {
 
