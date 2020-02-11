@@ -3,21 +3,24 @@ import React, { Component } from 'react';
 import './item-add-form.css';
 
 export default class ItemAddForm extends Component {
-    constructor() {
-        super();
-        this.state = {
-            label: ''
-        };
-        this.onLabelChange = this.onLabelChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         label: ''
+    //     };
+    //     this.onLabelChange = this.onLabelChange.bind(this);
+    //     this.onSubmit = this.onSubmit.bind(this);
+    // };
+    state = {
+        label: ''
     };
 
-    onLabelChange(e) {
+    onLabelChange = (e) => {
         this.setState({
             label: e.target.value
         });
     };
-    onSubmit(e) {
+    onSubmit = (e) => {
         e.preventDefault();
         this.props.onItemAdded(this.state.label);
         // document.getElementById('todoForm').value = '';
