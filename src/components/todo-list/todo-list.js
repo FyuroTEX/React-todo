@@ -14,7 +14,7 @@ const TodoList = ({ todos, onDeleted, onToggleDone, onToggleImportant }) => {
           {...itemProps}
           onDeleted={() => onDeleted(id)}
           onToggleImportant={() => onToggleImportant(id)}
-          onToggleDone={()=> onToggleDone(id)}
+          onToggleDone={() => onToggleDone(id)}
         />
       </li>
     );
